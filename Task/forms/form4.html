@@ -8,127 +8,129 @@
 </head>
 
 <body>
-    <table cellpadding="3">
-        <captionu><u>Student Registtration From Using Table in HTML</u></caption>
-            <tr>
-                <td><label>First Name</label></td>
-                <td><input type="text" placeholder="Enter your name"></td>
-                <td>(Max 50 Characters Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>Last Name</label></td>
-                <td><input type="text" placeholder="Enter your surname"></td>
-                <td>(Max 50 Characters Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>Email ID</label></td>
-                <td><input type="text" placeholder="Enter your Email"></td>
-            </tr>
-            <tr>
-                <td><label>Mobile Number</label></td>
-                <td><input type="tel" placeholder="Enter Your Number"></td>
-                <td>(10 Digits Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>Gender</label></td>
-                <td><input type="radio" name="dd">Male <input type="radio" name="dd">Female</td>
-            </tr>
-            <tr>
-                <td><label>Date os Birth(DOB)</label></td>
-                <td><input type="date" name="" id=""></td>
-            </tr>
-            <tr>
-                <td align="start-center"><label>Adderess</label></td>
-                <td colspan="2"><textarea></textarea></td>
-            </tr>
-            <tr>
-                <td><label>City</label></td>
-                <td><input type="text" placeholder="Enter your city"></td>
-                <td>(Max 50 Characters Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>Pin Code</label></td>
-                <td><input type="text" placeholder="382345"></td>
-                <td>(Max 6 Numbers Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>State</label></td>
-                <td><input type="text" placeholder="Enter your state"></td>
-                <td>(Max 50 Characters Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>Country</label></td>
-                <td><input type="text" placeholder="India"></td>
-                <td>(Max 50 Characters Allowed)</td>
-            </tr>
-            <tr>
-                <td><label>Hobbies</label></td>
-                <td colspan="2">
-                    <input type="checkbox">Drawing
-                    <input type="checkbox">Css
-                    <input type="checkbox">HTML <br>
-                    <input type="checkbox">Others <input type="text" placeholder="Teaching">
-                    <label> <br>(Max 50 Chasracters Allowed)</label>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="5"><label>Qualification</label></td>
-                <td>
-                    <input type="checkbox">High School(10th)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox">Higher School(12th)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox">Graduation(Bachelors)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox">Post Graduation(Masters)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox">phd
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="8"><label>Courses <br> Applied For</label></td>
-                <td><input type="radio" name="gt">BCA (Bachelor of Computer Application)</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="gt">B.Com(Bachelor of Commerce)</td>
-            </tr>
+    <form action="">
+        <table cellpadding="3">
+            <captionu><a href=""><u>Student Registtration From Using Table in HTML</u></a></caption>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" placeholder="Enter your name" required> (Max 50 Characters Allowed)</td>
+                    
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" placeholder="Enter your surname" required>  (Max 50 Characters Allowed)</td>
+                </tr>
+                <tr>
+                    <td><label>Email ID</label></td>
+                    <td><input type="email" placeholder="Enter your Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" placeholder="Enter your password" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td><input type="tel" pattern="[6-9]+[0-9]{9}" placeholder="Enter Your Number" maxlength="10" required> (10 Digits Allowed)</td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="dd" >Male <input type="radio" name="dd">Female</td>
+                </tr>
+                <tr>
+                    <td><label>Date os Birth(DOB)</label></td>
+                    <td><input type="date" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td align="start-center"><label>Adderess</label></td>
+                    <td colspan="2"><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>City</label></td>
+                    <td><input type="text" placeholder="Enter your city"> (Max 50 Characters Allowed)</td>
+        
+                </tr>
+                <tr>
+                    <td><label>Pin Code</label></td>
+                    <td><input type="text" placeholder="382345"> (Max 6 Numbers Allowed)</td>
+                </tr>
+                <tr>
+                    <td><label>State</label></td>
+                    <td><input type="text" placeholder="Enter your state"> (Max 50 Characters Allowed)</td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td><input type="text" placeholder="India"> (Max 50 Characters Allowed)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Hobbies</label></td>
+                    <td colspan="2">
+                        <input type="checkbox">Drawing
+                        <input type="checkbox">Css
+                        <input type="checkbox">HTML <br>
+                        <input type="checkbox">Others <input type="text" placeholder="Teaching">
+                        <label> <br>(Max 50 Chasracters Allowed)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="5"><label>Qualification</label></td>
+                    <td>
+                        <input type="checkbox" name="choice">High School(10th)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="choice">Higher School(12th)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="choice">Graduation(Bachelors)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="choice">Post Graduation(Masters)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="choice">phd
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="8"><label>Courses <br> Applied For</label></td>
+                    <td><input type="radio" name="gt">BCA (Bachelor of Computer Application)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt">B.Com(Bachelor of Commerce)</td>
+                </tr>
 
-            <tr>
-                <td><input type="radio" name="gt">B.Sc(Bachelor of Science)</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="gt">BA(Bachelor of Arts)</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="gt">MCA(Master of Computer Applications)</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="gt">M.Com(Master of Commerce)</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="gt">M.Sc(Master of Science)</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="gt">MA(Master of Arts)</td>
-            </tr>
-            <tr>
-                <td colspan="3" align="center"><input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </td>
-            </tr>
-    </table>
+                <tr>
+                    <td><input type="radio" name="gt">B.Sc(Bachelor of Science)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt">BA(Bachelor of Arts)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt">MCA(Master of Computer Applications)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt">M.Com(Master of Commerce)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt">M.Sc(Master of Science)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gt">MA(Master of Arts)</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center"><input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+        </table>
+    </form>
 </body>
 
 </html>
