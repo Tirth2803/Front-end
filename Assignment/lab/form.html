@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+</head>
+<body>
+     <h2>Registration Form</h2>
+    <form action="">
+        <div>
+            <label for="name">Full Name &nbsp; &nbsp; &nbsp;</label>
+            <input type="text" id="name" required minlength="7" placeholder="Enter your name">
+        </div> <br>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+        </div> <br>
+        <div>
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" required pattern="[6-9][0-9]{9}" maxlength="10" placeholder="Enter your number">
+        </div> <br>
+        <div>
+            <label for="mes">Message &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <textarea  id="mes" placeholder="Enter your Message"></textarea>
+        </div> <br>
+        <div>
+            <label for="sub">Subject &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <select name="" id="sub">
+                <option value="">Select Your Favourit</option>
+                <option value="">Maths</option>
+                <option value="">Gujrati</option>
+                <option value="">English</option>
+            </select>
+        </div>  <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
